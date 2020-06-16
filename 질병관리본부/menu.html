@@ -41,6 +41,7 @@ nav li{
   text-align: center;
   text-decoration: none;
   display: block;
+
 }
 
 
@@ -74,6 +75,7 @@ nav li{
 }
 
 section{
+display:inline-block;
 float: left;
 margin-top:10px;
 padding-bottom:20px;
@@ -86,10 +88,18 @@ aside li{
 text-align:right;
 margin: 10px 0 30px 0;
 }
+#logo{
+float: left;
+margin-top:10px;
+}
+#top{
+float: right;
+margin:30px 20px 0 0;
+}
 footer{
-	width: 1300px;
-	height: 100px;
-	margin:10px 0 10px 0;
+  width: 1300px;
+  height: 100px;
+  margin:10px 0 10px 0;
 }
 #footer1{
 float: left;
@@ -99,68 +109,18 @@ margin: 10px 0 0 10px;
 float: right;
 margin: 10px 0 0 180px;
 }
-#logo{
-float: left;
-margin-top:10px;
+#list {
+  text-align: center;;
 }
-#top{
-float: right;
-margin:30px 20px 0 0;
-}
-#sub1{
-
-}
-#sub1 li{
-	display: inline-block;
-	text-align: center;
-	padding-right:20px;
-}
-#sub1 img:hover{
-	box-shadow: 5px 5px 10px gray;
-	transform: translate(5px, -5px);
-}
-#sub2{
-border-top :2px solid #bbbbbb;
-border-bottom:2px solid #bbbbbb;
-}
-#sub2 img{
-width : 80px;
-height: 80px;
-border-radius: 50% 50%;
-}
-#sub2 li{
-display: inline-block;
-padding-right: 20px;
-text-align: center;
-width:160px;
-overflow: hidden;
-}
-#sub2 img:hover{
-	transform: scale(1.1);
-}
-#sub3{
-
-}
-#sub3 li{
-	display: inline-block;
-	margin-right: 16px;
-	overflow: hidden;
-}
-#sub3 img{
-	width: 250px;
-	height: 180px;
-	display: block;
-}
-#sub3 img:hover{
-	transform: scale(1.1);
-	transition: transform 1s;
+#list li:hover{
+  transform: scale(1.1);
 }
 </style>
 </head>
 <body id="page">
 <header>
 <div id="logo">
-	<a href=""><img src="./img/logo.PNG"></a>
+  <a href="index.html"><img src="./img/logo.PNG"></a>
 	
 </div>
 <div id="top">
@@ -178,7 +138,7 @@ overflow: hidden;
         <li><a href="#" aria-label="subemnu">감염병유행정보</a></li>
         <li><a href="#" aria-label="subemnu">결핵</a></li>
         <li><a href="#" aria-label="subemnu">예방접종</a></li>
-        <li><a href="menu.html" aria-label="subemnu">감염병간행물</a></li>
+        <li><a href="#" aria-label="subemnu">감염병간행물</a></li>
       </ul>
     </li>
     <li><a href="#">건강정보</a>
@@ -201,9 +161,6 @@ overflow: hidden;
 	</ul>
 </nav>
 <div class="clear"></div>
-<section>
-	<img src="./img/main.PNG" width="1080">
-</section>
 <aside>
 	<ul>
 		<li> 사용자별맞춤메뉴 </li>
@@ -213,39 +170,40 @@ overflow: hidden;
 	</ul>
 </aside>
 <section>
-	<ul id="sub1">
-		<li><img src="./img/s1.PNG" width="250"> <br> 미세먼지 건강수치</br></li>
-		<li><img src="./img/s2.PNG" width="250"><br> 법정감염병분류체계개편 </br></li>
-		<li><img src="./img/s3.PNG" width="250"><br> 액상형전자담배 관련 폐손상</br></li>
-		<li><img src="./img/s4.PNG" width="250"><br> 코로나19 영상자료</br></li>
-	</ul>
+  <div style="margin-top: 30px">
+<img src="./img/menu.PNG">
+</div>
 </section>
 <section>
-	<ul id="sub2">
-		<li><img src="./img/j1.PNG"><br>국가별질병정보</br></li>
-		<li><img src="./img/j2.PNG"><br>홍보자료</br></li>
-		<li><img src="./img/j3.PNG"><br>이달의 건강정보</br></li>
-		<li><img src="./img/j4.PNG"><br>조직도,직원검색</br></li>
-		<li><img src="./img/j5.PNG"><br>법령,지침,서식</br></li>
-		<li><img src="./img/j6.PNG"><br>공고/공시</br></li>
-	</ul>
+  <div style="width:880px;border-bottom: 2px solid #000000;padding-bottom:30px;padding: 40px 0 20px 0;">
+  <p style="font-size:1.5em;font-weight:900;">간염병간행물</p>
+</div>
+<img src="./img/pic.PNG" width="250">
+<div style="margin-top:100px; float:right">
+<p style="font-size:0.9em;">질병관리본부에서 볼 수 있는 감염병 간행물은 누구나 쉽고 편리하게 접할수 있으며,</p>
+<p style="font-size:0.9em; margin-top:8px;"> 신속하고 정확한 감염병 대응을 위해 노력하고 있습니다.</p>
+</div>
 </section>
+
+  <ul id = "list">
 <section>
-	<ul id="sub3">
-		<li><img src="./img/ss1.PNG" width="250"></li>
-		<li><img src="./img/ss2.PNG" width="250"></li>
-		<li><img src="./img/ss3.PNG" width="250"></li>
-		<li><img src="./img/ss4.PNG" width="250"></li>
-	</ul>
-</section>
+    <li style="border :1px solid #bbbbbb; background-color: #ffffff; padding: 20px 130px 20px 130px;">주간감염병통계</li>
+  <li style="border :1px solid #bbbbbb; background-color: #ffffff; padding: 20px 130px 20px 130px;">표본감시주간소식지</li>
+   <li style="border :1px solid #bbbbbb; background-color: #ffffff; padding: 20px 130px 20px 130px;">역학조사연보</li></section>
+<section>
+    <li style="border :1px solid #bbbbbb; background-color: #ffffff; padding: 20px 130px 20px 130px;">감염병 뉴스레터</li>
+    <li style="border :1px solid #bbbbbb; background-color: #ffffff; padding: 20px 130px 20px 130px;">감염병감시연보</li>
+    <li style="border :1px solid #bbbbbb; background-color: #ffffff; padding: 20px 130px 20px 130px;">해외감염병발생동향(주간/월간)</li></section>
+  </ul>
+
 <div class="clear"></div>
 <footer>
-	<div id = "footer1">
-		<img src="./img/bottom1.PNG">
-	</div>
-	<div id="footer2">
-		<img src="./img/bottom2.PNG">
-	</div>
+  <div id = "footer1">
+    <img src="./img/bottom1.PNG">
+  </div>
+  <div id="footer2">
+    <img src="./img/bottom2.PNG">
+  </div>
 </footer>
 </body>
 </html>
